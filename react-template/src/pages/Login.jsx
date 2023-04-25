@@ -38,8 +38,9 @@ const Login = () => {
       );
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
-      console.log(accessToken, roles);
-      setAuth({ accessToken, roles });
+      const username = response?.data?.user;
+      console.log(accessToken, roles, username);
+      setAuth({ user: username, accessToken, roles });
       navigate(from, { from: location });
     } catch (err) {
       if (!err?.response) {
