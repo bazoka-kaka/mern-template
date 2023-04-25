@@ -13,6 +13,8 @@ const handleAuth = async (req, res) => {
   const match = await bcrypt.compare(pwd, foundUser.password);
 
   if (match) {
+    // get roles values
+    const roles = Object.values(foundUser.roles).filter(Boolean);
     // create refreshToken and accessToken
     const refreshToken = jwt.sign(
       { username: foundUser.username },
@@ -20,7 +22,7 @@ const handleAuth = async (req, res) => {
       { expiresIn: "15m" }
     );
     const accessToken = jwt.sign(
-      { username: foundUser.username },
+      { UserInfo: { username: foundUser.username, roles } },
       process.env.ACCESS_TOKEN_SECRET,
       { expiresIn: "30s" }
     );
@@ -31,7 +33,7 @@ const handleAuth = async (req, res) => {
 
     // save refreshToken to cookie
     res.cookie("jwt", refreshToken, { httpOnly: true, maxAge: 15 * 60 * 1000 });
-    res.json({ accessToken });
+    res.json({ accessToken, roles });
   } else {
     res.status(401).json({ message: "Bad credentials" });
   }
