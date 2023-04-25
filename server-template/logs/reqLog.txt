@@ -8,3 +8,17 @@
 25042023	09:09:23	56e69c0a-2190-4a8f-8d57-200284b0d037	GET	undefined	/css/styles.css
 25042023	09:11:28	aac80e39-2d72-44c1-9d9a-3a1f9ab74bf8	GET	undefined	/
 25042023	09:11:28	79d1ade2-4c97-4c5b-a3d8-c0ae6ac54972	GET	undefined	/css/styles.css
+25042023	09:35:50	8af4d55c-433b-4b2c-b44f-263789256a75	GET	undefined	/employees
+25042023	09:35:57	c9643616-22f2-4e1f-8f19-ab5353f1c86f	POST	undefined	/employees
+25042023	09:36:00	0601de79-78d3-45fc-99ac-bf68eae17799	POST	undefined	/employees
+25042023	09:36:07	db8a7aee-5237-482f-a9b1-bd5bdc32f825	POST	undefined	/employees
+25042023	09:36:10	ab5624b9-42a3-4207-a597-0dbf2526816c	GET	undefined	/employees
+25042023	09:36:24	8b31b053-eb39-4ce7-8942-5bd58e6e0e81	POST	undefined	/employees
+25042023	09:36:26	b7206a5f-6a1d-439f-b0f8-d9f53530237e	GET	undefined	/employees
+25042023	09:36:33	3f7289e1-97f7-47c8-88bc-97e5a68af103	GET	undefined	/employees/64473ca858bbd0dfb2b186ed
+25042023	09:36:35	1f5714fa-6883-45eb-967b-b51ab0a00f8b	GET	undefined	/employees/2
+25042023	09:36:43	21aa5012-3218-432b-bf74-492caf9b1f40	GET	undefined	/employees/64473ca858bbd0dfb2b186ed
+25042023	09:36:52	daad753f-3cfb-492c-9074-5dc3737424de	PUT	undefined	/employees
+25042023	09:36:55	88bc361f-d096-4758-b1b2-9786003208e7	GET	undefined	/employees
+25042023	09:37:10	ddabeecb-9b36-40dd-a069-58232d52b57e	DELETE	undefined	/employees
+25042023	09:37:13	db1911bb-3d25-4962-ac02-6500ebc0dd7a	GET	undefined	/employees

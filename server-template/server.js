@@ -1,10 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const { logger, errLogger } = require("./middlewares/logEvents");
 const corsOptions = require("./config/corsOptions");
+const connectDB = require("./config/dbConn");
 const app = express();
 const PORT = process.env.PORT || 3500;
+
+// connect to mongodb
+connectDB();
 
 // middlewares
 app.use(logger);
@@ -19,6 +25,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // routes
 app.use("/", require("./routes/root"));
+app.use("/employees", require("./routes/api/employees"));
 
 app.all("*", (req, res) => {
   res.status(404);
@@ -36,6 +43,9 @@ app.all("*", (req, res) => {
 app.use(errLogger);
 
 // express port listening
-app.listen(PORT, () => {
-  console.log(`server is running on port ${PORT}`);
+mongoose.connection.once("open", () => {
+  console.log("server is connected to MongoDB");
+  app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
+  });
 });
