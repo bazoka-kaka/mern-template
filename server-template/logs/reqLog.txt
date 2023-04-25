@@ -131,3 +131,17 @@
 25042023	22:08:42	9f8e3795-5bc6-444e-a723-51141dd05fb8	POST	http://localhost:3000	/auth
 25042023	22:08:42	4a43f60d-85d2-4fbb-a48b-a39387194965	GET	http://localhost:3000	/employees
 25042023	22:09:03	88ce0d04-1819-46d1-8a37-a8c896d76a62	GET	http://localhost:3000	/refresh
+25042023	22:10:40	83bec6d0-2bd9-4113-af97-368eaa28fe8f	GET	http://localhost:3000	/employees
+25042023	22:14:29	5ba1ba62-2122-498a-9f73-1b2d596c9362	GET	http://localhost:3000	/employees
+25042023	22:20:12	24442994-ac1c-4240-9a2b-6efa8cbcac48	OPTIONS	http://localhost:3000	/employees
+25042023	22:20:12	b6043c71-04da-4a49-b1e4-231955dbfd42	GET	http://localhost:3000	/employees
+25042023	22:20:12	b35fc328-f183-4b4b-a691-12008ff8ad06	GET	http://localhost:3000	/refresh
+25042023	22:20:12	c2a66771-a910-4ce7-84c3-88baf5f25b69	GET	http://localhost:3000	/employees
+25042023	22:20:18	0509e271-cc03-45b3-b841-1cd2addefca5	OPTIONS	http://localhost:3000	/auth
+25042023	22:20:18	0e238d7c-0650-4726-a056-86d54b04aa7c	POST	http://localhost:3000	/auth
+25042023	22:20:18	dbe33821-914c-4d29-891c-4fd6df972e55	OPTIONS	http://localhost:3000	/employees
+25042023	22:20:18	0648a278-1e6f-4611-9371-586aeffd3d18	GET	http://localhost:3000	/employees
+25042023	22:20:33	6914f7b9-42b0-4c6b-b364-e8bc30d7a0fd	OPTIONS	http://localhost:3000	/employees
+25042023	22:20:33	b11d45cd-0e12-43f4-b2fa-87d2ae1b329c	GET	http://localhost:3000	/employees
+25042023	22:20:47	539ff47c-1b24-423f-a6fb-e0d54cb2ad79	OPTIONS	http://localhost:3000	/employees
+25042023	22:20:47	687ff377-7b0d-4f99-a0e3-2394a18199bb	GET	http://localhost:3000	/employees

@@ -15,6 +15,7 @@ const useRefreshToken = () => {
         console.log(accessToken, user, roles);
         return { ...prev, accessToken, user, roles };
       });
+      return response?.data?.accessToken;
     } catch (err) {
       console.error(err?.message);
     }

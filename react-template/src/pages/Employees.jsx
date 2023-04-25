@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import axios from "../api/axios";
-import useRefreshToken from "../hooks/useRefreshToken";
+import useAxiosPrivate from "../hooks/useAxiosPrivate";
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
-  const refresh = useRefreshToken();
+  const axiosPrivate = useAxiosPrivate();
 
   useEffect(() => {
     let isMounted = true;
@@ -12,7 +11,7 @@ const Employees = () => {
 
     const getEmployees = async () => {
       try {
-        const response = await axios.get("/employees", {
+        const response = await axiosPrivate.get("/employees", {
           signal: controller.signal,
         });
         console.log(response?.data);
@@ -28,7 +27,7 @@ const Employees = () => {
       isMounted = false;
       controller.abort();
     };
-  }, []);
+  }, [axiosPrivate]);
 
   return (
     <div>
@@ -44,7 +43,7 @@ const Employees = () => {
       ) : (
         <p>No employees found</p>
       )}
-      <button onClick={refresh}>Refresh</button>
+      <button>Logout</button>
     </div>
   );
 };
