@@ -1,0 +1,1 @@
+25042023	09:01:11	ae3f3afb-8769-46d9-b430-710156a904aa	Error: ENOENT: no such file or directory, stat 'C:\Users\KAKA\programming\tutorials\mern-template\server-template\views\404.html'
