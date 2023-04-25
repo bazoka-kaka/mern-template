@@ -105,3 +105,5 @@
 25042023	21:35:50	10798dc5-5ef3-4c7b-9e08-3c3f30537b26	POST	http://localhost:3000	/register
 25042023	21:40:46	e9361190-5f4a-4d3f-bf2d-563a1ae5d868	OPTIONS	http://localhost:3000	/auth
 25042023	21:40:46	f7bc801d-d30d-4951-a44c-20734c8df0f4	POST	http://localhost:3000	/auth
+25042023	21:46:11	9e3dc214-22b8-49c9-a783-e87677b9fa99	OPTIONS	http://localhost:3000	/auth
+25042023	21:46:11	b50030b0-10f9-47b5-aa14-8983ae98f4ae	POST	http://localhost:3000	/auth

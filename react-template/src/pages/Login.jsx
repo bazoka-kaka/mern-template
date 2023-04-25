@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "../api/axios";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Login = () => {
   const userRef = useRef();
   const navigate = useNavigate();
   const location = useLocation();
   const from = location?.state?.from?.pathname;
+  const { setAuth } = useAuth();
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
@@ -34,7 +36,10 @@ const Login = () => {
           withCredentials: true,
         }
       );
-      console.log(response?.data);
+      const accessToken = response?.data?.accessToken;
+      const roles = response?.data?.roles;
+      console.log(accessToken, roles);
+      setAuth({ accessToken, roles });
       navigate(from, { from: location });
     } catch (err) {
       if (!err?.response) {
