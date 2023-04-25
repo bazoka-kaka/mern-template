@@ -27,3 +27,9 @@
 25042023	10:05:41	7ef581a6-14dd-4110-b377-1ae249532cfa	POST	undefined	/register
 25042023	10:05:48	8c2e9c2c-6ca8-4fa4-ba37-2e38a810ce24	POST	undefined	/register
 25042023	10:20:26	3b06be43-15ae-4f2a-8dac-98b39a7dc573	POST	undefined	/auth
+25042023	10:28:25	935ed817-19e8-47e0-b487-3b1bdb4cf53b	POST	undefined	/auth
+25042023	10:28:28	1f290eed-c4d6-4f91-a016-842fd4497985	GET	undefined	/refresh
+25042023	10:28:29	c989d7b2-af7d-495b-8aac-bf65cdc2aa1f	GET	undefined	/refresh
+25042023	10:28:30	a29dbc6a-637b-4511-bbd0-97b434e70934	GET	undefined	/refresh
+25042023	10:28:31	d45179a8-1120-4b60-95a0-c6215f596ea5	GET	undefined	/refresh
+25042023	10:28:32	08476760-15af-4135-b2cb-29a17ab1f302	GET	undefined	/refresh
