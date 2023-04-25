@@ -32,7 +32,12 @@ const handleAuth = async (req, res) => {
     await foundUser.save();
 
     // save refreshToken to cookie
-    res.cookie("jwt", refreshToken, { httpOnly: true, maxAge: 15 * 60 * 1000 });
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      maxAge: 15 * 60 * 1000,
+      sameSite: "None",
+      secure: true,
+    });
     res.json({ accessToken, roles });
   } else {
     res.status(401).json({ message: "Bad credentials" });

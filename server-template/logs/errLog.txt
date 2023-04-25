@@ -3,3 +3,5 @@
 25042023	09:07:59	96e26944-ef72-4cc4-9822-20ffe7228082	Error: Not allowed by CORS
 25042023	09:08:00	8628040e-6835-4c6c-b2eb-3f0a74772444	ReferenceError: allowedOrigins is not defined
 25042023	09:08:53	5f271b06-7a1c-4670-a1e9-a947dc182fb3	Error: Not allowed by CORS
+25042023	21:08:57	aa12230a-b046-4f6c-b348-c913a3a25e68	ReferenceError: allowedOrigins is not defined
+25042023	21:09:03	0f3a5207-ffe0-4557-8b66-d9060789494f	ReferenceError: allowedOrigins is not defined
