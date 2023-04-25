@@ -26,3 +26,4 @@
 25042023	10:05:32	18df869e-7dfe-49c9-a1ab-355de88c6d5b	POST	undefined	/register
 25042023	10:05:41	7ef581a6-14dd-4110-b377-1ae249532cfa	POST	undefined	/register
 25042023	10:05:48	8c2e9c2c-6ca8-4fa4-ba37-2e38a810ce24	POST	undefined	/register
+25042023	10:20:26	3b06be43-15ae-4f2a-8dac-98b39a7dc573	POST	undefined	/auth

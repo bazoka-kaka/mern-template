@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const cookieParser = require("cookie-parser");
 const { logger, errLogger } = require("./middlewares/logEvents");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
@@ -15,6 +16,8 @@ connectDB();
 // middlewares
 app.use(logger);
 
+app.use(cookieParser());
+
 app.use(cors(corsOptions));
 
 app.use(express.json());
@@ -26,6 +29,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // routes
 app.use("/", require("./routes/root"));
 app.use("/register", require("./routes/register"));
+app.use("/auth", require("./routes/auth"));
+
 app.use("/employees", require("./routes/api/employees"));
 
 app.all("*", (req, res) => {
