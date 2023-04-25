@@ -6,3 +6,5 @@
 25042023	09:08:53	1a00e1bc-07a1-417e-864c-985971415235	GET	undefined	/
 25042023	09:09:23	1ef401e5-1272-4471-bee0-debdf6f79ac1	GET	undefined	/
 25042023	09:09:23	56e69c0a-2190-4a8f-8d57-200284b0d037	GET	undefined	/css/styles.css
+25042023	09:11:28	aac80e39-2d72-44c1-9d9a-3a1f9ab74bf8	GET	undefined	/
+25042023	09:11:28	79d1ade2-4c97-4c5b-a3d8-c0ae6ac54972	GET	undefined	/css/styles.css

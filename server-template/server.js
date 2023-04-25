@@ -18,9 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // routes
-app.get("^/$|index(.html)?", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
-});
+app.use("/", require("./routes/root"));
 
 app.all("*", (req, res) => {
   res.status(404);
