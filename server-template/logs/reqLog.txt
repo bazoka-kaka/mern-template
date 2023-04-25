@@ -22,3 +22,7 @@
 25042023	09:36:55	88bc361f-d096-4758-b1b2-9786003208e7	GET	undefined	/employees
 25042023	09:37:10	ddabeecb-9b36-40dd-a069-58232d52b57e	DELETE	undefined	/employees
 25042023	09:37:13	db1911bb-3d25-4962-ac02-6500ebc0dd7a	GET	undefined	/employees
+25042023	10:05:28	263de467-4644-490d-a006-6dee281dd2f0	POST	undefined	/register
+25042023	10:05:32	18df869e-7dfe-49c9-a1ab-355de88c6d5b	POST	undefined	/register
+25042023	10:05:41	7ef581a6-14dd-4110-b377-1ae249532cfa	POST	undefined	/register
+25042023	10:05:48	8c2e9c2c-6ca8-4fa4-ba37-2e38a810ce24	POST	undefined	/register
