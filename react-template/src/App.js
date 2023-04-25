@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import RequireAuth from "./components/RequireAuth";
+import PersistLogin from "./components/PersistLogin";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Unauthorized from "./pages/Unauthorized";
@@ -19,18 +20,20 @@ function App() {
       <Route path="/unauthorized" element={<Unauthorized />} />
 
       {/* protected routes */}
-      <Route
-        element={
-          <RequireAuth
-            allowedRoles={[
-              ROLES_LIST.Admin,
-              ROLES_LIST.Editor,
-              ROLES_LIST.User,
-            ]}
-          />
-        }
-      >
-        <Route path="/employees" element={<Employees />} />
+      <Route element={<PersistLogin />}>
+        <Route
+          element={
+            <RequireAuth
+              allowedRoles={[
+                ROLES_LIST.Admin,
+                ROLES_LIST.Editor,
+                ROLES_LIST.User,
+              ]}
+            />
+          }
+        >
+          <Route path="/employees" element={<Employees />} />
+        </Route>
       </Route>
     </Routes>
   );

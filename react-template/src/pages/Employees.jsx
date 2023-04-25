@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import useAxiosPrivate from "../hooks/useAxiosPrivate";
+import useLogout from "../hooks/useLogout";
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
   const axiosPrivate = useAxiosPrivate();
+  const logout = useLogout();
 
   useEffect(() => {
     let isMounted = true;
@@ -43,7 +45,7 @@ const Employees = () => {
       ) : (
         <p>No employees found</p>
       )}
-      <button>Logout</button>
+      <button onClick={logout}>Logout</button>
     </div>
   );
 };

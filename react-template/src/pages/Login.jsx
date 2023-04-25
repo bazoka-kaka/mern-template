@@ -8,7 +8,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location?.state?.from?.pathname;
-  const { setAuth } = useAuth();
+  const { setAuth, persist, setPersist } = useAuth();
 
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
@@ -76,7 +76,19 @@ const Login = () => {
           value={pwd}
           onChange={(e) => setPwd(e.target.value)}
           required
+        />
+        <br />
+        <input
+          type="checkbox"
+          id="persist"
+          checked={persist}
+          onChange={(e) => {
+            localStorage.setItem("persist", e.target.checked);
+            setPersist(e.target.checked);
+          }}
         />{" "}
+        <label htmlFor="persist">Trust this device</label>
+        <br />
         <button>Login</button>
         <p>
           Don't have an account?{" "}
