@@ -1,0 +1,26 @@
+{
+  "name": "server-template",
+  "version": "1.0.0",
+  "description": "Backend server template built using ExpressJS, MongoDB, Mongoose, and Nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [
+    "expressjs",
+    "mongodb",
+    "mongoose",
+    "nodejs"
+  ],
+  "author": "bazoka-kaka",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}
