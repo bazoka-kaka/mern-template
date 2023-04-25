@@ -4,9 +4,10 @@ const path = require("path");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
-const { logger, errLogger } = require("./middlewares/logEvents");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
+const { logger, errLogger } = require("./middlewares/logEvents");
+const verifyJWT = require("./middlewares/verifyJWT");
 const app = express();
 const PORT = process.env.PORT || 3500;
 
@@ -33,6 +34,7 @@ app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
 
+app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
 
 app.all("*", (req, res) => {

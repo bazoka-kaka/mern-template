@@ -47,3 +47,11 @@
 25042023	10:48:34	6a827b9c-e34a-4e09-ab8a-e6e6912056bf	GET	undefined	/refresh
 25042023	10:48:35	04a4c6b2-11c1-4296-ac9e-7cc8f4f826bf	GET	undefined	/logout
 25042023	10:48:37	f72f8028-d5a3-4f44-9297-60809cf3f667	GET	undefined	/refresh
+25042023	10:53:02	854b4c84-58f2-4ca0-b232-6c6ffe78d6d5	POST	undefined	/auth
+25042023	10:53:04	6c460706-b5fe-412d-97ca-cf4dab5dad11	GET	undefined	/employees
+25042023	10:53:13	3f32a766-e87c-4198-adc9-be49141bff84	GET	undefined	/employees
+25042023	10:53:15	29e6296c-e773-4644-b295-0a8b8fb6ab4e	GET	undefined	/employees
+25042023	10:53:24	390258ca-55e8-4c8e-8fce-aed7b247509d	POST	undefined	/employees
+25042023	10:53:25	4a7ec2cc-ea07-4d30-9464-c6db78b889ec	POST	undefined	/employees
+25042023	10:53:28	86d46c48-cb11-4124-b9e5-389363d211e3	GET	undefined	/employees
+25042023	10:53:40	18c2a2d6-ba30-4e31-90da-d28dead35386	GET	undefined	/employees
