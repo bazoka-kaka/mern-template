@@ -1,1 +1,5 @@
 25042023	09:01:11	ae3f3afb-8769-46d9-b430-710156a904aa	Error: ENOENT: no such file or directory, stat 'C:\Users\KAKA\programming\tutorials\mern-template\server-template\views\404.html'
+25042023	09:07:59	2fd7934e-a829-4e65-8940-113a6aa60f27	Error: Not allowed by CORS
+25042023	09:07:59	96e26944-ef72-4cc4-9822-20ffe7228082	Error: Not allowed by CORS
+25042023	09:08:00	8628040e-6835-4c6c-b2eb-3f0a74772444	ReferenceError: allowedOrigins is not defined
+25042023	09:08:53	5f271b06-7a1c-4670-a1e9-a947dc182fb3	Error: Not allowed by CORS
